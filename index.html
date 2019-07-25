@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+<style>
+		h3 {
+			font-family: arial;
+			margin: 0px;
+		}
+		li span {
+			font-family: arial;
+		}
+		li span.label {			
+			color: #444;
+			font-weight: normal;
+		}
+		li span {
+			color: #000;
+			font-weight: bold;
+		}
+		.userFeedback {
+			font-family: arial;
+			color: green;
+			height: 30px;
+
+		}
+		.retry {
+			cursor: pointer;
+			font-family: arial;
+			color: blue;
+		}
+		div.row {
+			width: 180px;
+			height: 200px;
+			float: left;
+
+		}
+		ul {
+			margin-left: 0px;
+			padding: 0px;
+
+		}
+		ul.stats li {
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+			margin-left: 0px;
+			padding: 0px;
+		}
+	</style>
+
+    <title>Snakey Snake</title>
+  </head>
+  <body>
+<h2 id="user_feedback" class="userFeedback">Welocome to Snakey!</h2>
+
+<!-- <div id="alert_container"></div> -->
+<div class="row">
+	<ul class="stats">
+		<h3>-- Stats --</h3>
+		<li>
+			<span class="label">Level:</span> <span class="level" id="user_level">1</span>
+		</li>
+		<li>
+			<span class="label">Snake Health:</span> <span class="health" id="snake_health">100</span>
+		</li>
+		<li>
+			<span class="label">Your Score:</span> <span class="score" id="user_score">0</span>
+		</li>
+		<li>
+			<span class="label">Elapsed Time:</span> <span class="time" id="user_time">0</span>
+		</li>
+	</ul>
+</div>
+<canvas id="snakeCanvas" width="200" height="100"></canvas>
+<div id="retry" onclick="reloadPage()" class="retry"></div>
+
+<script src="snake.js" type="text/javascript" ></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
